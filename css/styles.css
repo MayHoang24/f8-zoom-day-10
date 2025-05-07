@@ -54,13 +54,15 @@ a {
     --heading-font: "PT Sans", sans-serif;
     --primary: #b80257;
     --secondary: #783df0;
-    --primary-text-color: #fff;
-    --second-text-color: #fff9;
+    --second-text-color: #fff;
+    --primary-text-color: #fff9;
 }
 
 /* =======Css Common======= */
 .container {
-    width: 1170px;
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -92,10 +94,10 @@ a {
     padding-top: 40px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav__list {
-    margin-left: 60px;
     display: flex;
     align-items: center;
 }
@@ -103,7 +105,7 @@ a {
 .nav__link {
     padding: 12px 25px;
     font-family: var(--heading-font);
-    color: var(--primary-text-color);
+    color: var(--second-text-color);
     letter-spacing: 1.1px;
     font-weight: 700;
 }
@@ -158,25 +160,65 @@ a {
 }
 
 .submenu__item:hover {
-    color: var(--primary-text-color);
+    color: var(--second-text-color);
     translate: 6px 0;
 }
 
 /* Header Action */
 .header__action {
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .header__action--icon {
     position: relative;
-    padding: 0 12px;
     font-size: 1.6rem;
-    color: var(--primary-text-color);
+    color: var(--second-text-color);
     background: transparent;
     border: none;
     cursor: pointer;
 }
 
+/* Form Search */
+.for-search {
+    cursor: pointer;
+}
+
+.form-search {
+    display: none;
+    position: absolute;
+    width: 280px;
+    padding: 5px;
+    height: 55px;
+    top: 24px;
+    right: 0;
+    background: var(--second-text-color);
+}
+
+.form-search__input {
+    padding: 0 10px;
+    width: 82%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #ececec;
+    outline: none;
+}
+
+.form-search__btn {
+    width: 48px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    line-height: 45px;
+    text-align: center;
+}
+
+.header__action--icon #checkbox:checked ~ .form-search {
+    display: flex;
+}
+
+/* Header Content */
 .header__content {
     margin: auto;
 }
@@ -185,7 +227,7 @@ a {
     font-size: 3.2rem;
     font-weight: 700;
     text-align: center;
-    color: var(--primary-text-color);
+    color: var(--second-text-color);
 }
 
 .header__breadcrumbs {
@@ -216,32 +258,91 @@ a {
     color: var(--secondary);
 }
 
-/* Form Search */
-.form-search {
+/* =======Css Footer======= */
+.footer {
+    margin-top: 110px;
+    background: #151515;
+    padding: 80px 0 160px 0;
+}
+
+.footer__inner {
     display: flex;
-    position: absolute;
-    width: 280px;
-    padding: 5px;
-    height: 55px;
-    top: 24px;
-    right: 0;
-    background: var(--primary-text-color);
+    justify-content: space-between;
+
+    color: var(--primary-text-color);
 }
 
-.form-search__input {
-    width: 82%;
-    height: 100%;
-    background: transparent;
-    border: 1px solid #ececec;
-    padding: 0 49px 0 10px;
+.footer__col {
+    max-width: 270px;
 }
 
-.form-search__btn {
-    display: block;
-    width: 48px;
-    background: var(--primary);
-    color: #fff;
+.footer__desc,
+.footer__copyright {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    line-height: 22px;
+}
+
+.footer__download {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.footer__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--second-text-color);
+}
+
+.footer__list,
+.footer__subtitle {
+    margin-top: 38px;
+}
+
+.footer__item {
+    line-height: 30px;
+    transition: color ease 0.5s;
+}
+
+.footer__item:hover {
+    color: var(--primary);
+}
+
+.footer__form {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    background: #272727;
     border: none;
-    line-height: 45px;
-    text-align: center;
+    border-radius: 20px;
+    color: var(--primary-text-color);
+}
+
+.footer__form-input {
+    width: 100%;
+    height: 100%;
+    padding: 4px 16px;
+    color: currentColor;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.footer__form-btn {
+    margin-top: 10px;
+    width: 95px;
+    line-height: 40px;
+    background: var(--primary);
+    border: none;
+    border-radius: 999px;
+    color: var(--second-text-color);
+    letter-spacing: 1.5px;
+    transition: all ease 0.5s;
+}
+
+.footer__form-btn:hover {
+    color: var(--primary);
+    background: var(--second-text-color);
 }
