@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop</title>
+
+        <!-- Link Css -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__top">
+                            <label for="drawer-checkbox" class="drawer">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                            <input
+                                type="checkbox"
+                                name="checkbox"
+                                id="drawer-checkbox"
+                                hidden
+                            />
+                            <!-- Navigation Drawer -->
+                            <label
+                                for="drawer-checkbox"
+                                class="drawer-overlay"
+                            ></label>
+                            <nav class="nav-drawer">
+                                <label
+                                    for="drawer-checkbox"
+                                    class="drawer-close"
+                                >
+                                    <i class="fa-solid fa-xmark"></i
+                                ></label>
+                                <ul class="nav-drawer__list">
+                                    <li class="nav-drawer__item">
+                                        <a href="#!" class="nav-drawer__link">
+                                            HOME
+                                        </a>
+                                        <ul class="submenu-drawer__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Home Version One</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Home Version Two</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Home Video Background</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-drawer__item">
+                                        <a href="#!" class="nav-drawer__link">
+                                            COURSES
+                                        </a>
+                                        <ul class="submenu-drawer__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Courses 2 Column</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Courses 3 Column</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Courses Detail</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-drawer__item">
+                                        <a href="#!" class="nav-drawer__link">
+                                            EVENTS
+                                        </a>
+                                        <ul class="submenu-drawer__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Events List</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Events Grid</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Events Single</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-drawer__item">
+                                        <a href="#!" class="nav-drawer__link"
+                                            >PAGES</a
+                                        >
+                                        <ul class="submenu-drawer__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Our Teachers</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Teachers Profile</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >About Us</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Error Page</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >FAQ Page</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Login</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Sign up</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-drawer__item">
+                                        <a href="#!" class="nav-drawer__link">
+                                            PORTFOLIO
+                                        </a>
+                                        <ul class="submenu-drawer__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Portfolio 2 Column</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Portfolio 3 Column</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Portfolio 4 Column</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-drawer__item">
+                                        <a href="#!" class="nav-drawer__link"
+                                            >BLOG</a
+                                        >
+                                        <ul class="submenu-drawer__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Blog</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Blog Details</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-drawer__item">
+                                        <a href="#!" class="nav-drawer__link"
+                                            >SHOP</a
+                                        >
+                                        <ul class="submenu-drawer__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Shop Page</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu-drawer__item"
+                                                    >Shop Details</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-drawer__item">
+                                        <a href="#!" class="nav-drawer__link">
+                                            CONTACT
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- Logo -->
+                            <a href="#!" class="link-logo"
+                                ><img
+                                    src="./img/logo.png"
+                                    alt="Logo"
+                                    class="logo"
+                            /></a>
+                            <!-- Navigation Header -->
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item">
+                                        <a href="#!" class="nav__link">
+                                            HOME
+                                        </a>
+                                        <ul class="submenu__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Home Version One</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Home Version Two</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Home Video Background</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#!" class="nav__link">
+                                            COURSES
+                                        </a>
+                                        <ul class="submenu__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Courses 2 Column</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Courses 3 Column</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Courses Detail</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#!" class="nav__link">
+                                            EVENTS
+                                        </a>
+                                        <ul class="submenu__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Events List</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Events Grid</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Events Single</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#!" class="nav__link">PAGES</a>
+                                        <ul class="submenu__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Our Teachers</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Teachers Profile</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >About Us</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Error Page</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >FAQ Page</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Login</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Sign up</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#!" class="nav__link">
+                                            PORTFOLIO
+                                        </a>
+                                        <ul class="submenu__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Portfolio 2 Column</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Portfolio 3 Column</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Portfolio 4 Column</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#!" class="nav__link">BLOG</a>
+                                        <ul class="submenu__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Blog</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Blog Details</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#!" class="nav__link">SHOP</a>
+                                        <ul class="submenu__list">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Shop Page</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    class="submenu__item"
+                                                    >Shop Details</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#!" class="nav__link">
+                                            CONTACT
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__action">
+                                <div class="header__action--icon">
+                                    <label for="checkbox" class="for-search">
+                                        <i class="fa-solid fa-magnifying-glass">
+                                        </i>
+                                    </label>
+                                    <input
+                                        type="checkbox"
+                                        name="checkbox"
+                                        id="checkbox"
+                                        hidden
+                                    />
+                                    <form
+                                        action=""
+                                        class="form-search"
+                                        autocomplete="off"
+                                    >
+                                        <input
+                                            type="text"
+                                            class="form-search__input"
+                                            placeholder="Search..."
+                                        />
+                                        <button class="form-search__btn">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            >
+                                            </i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="header__action--icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__content">
+                            <h1 class="header__heading">SHOP</h1>
+                            <ul class="header__breadcrumbs">
+                                <li class="header__breadcrumbs--item">
+                                    <a
+                                        href="#!"
+                                        class="header__breadcrumbs--link"
+                                    >
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="header__breadcrumbs--item">
+                                    <a
+                                        href="#!"
+                                        class="header__breadcrumbs--link"
+                                    >
+                                        Pages
+                                    </a>
+                                </li>
+                                <li class="header__breadcrumbs--item">
+                                    <a
+                                        href="#!"
+                                        class="header__breadcrumbs--link"
+                                    >
+                                        Shop
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                <div class="main__wrapper">
+                    <!-- Sidebar -->
+                    <div class="sidebar">
+                        <form action="" class="form-sidebar" autocomplete="off">
+                            <input
+                                type="text"
+                                name="search"
+                                class="form-sidebar__input"
+                                placeholder="Search Product"
+                            />
+                            <button class="form-sidebar__btn">Search</button>
+                        </form>
+                        <h2 class="sidebar__heading">Shop Categories :</h2>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">SMM Shop</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link"
+                                    >Network Security</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link"
+                                    >Programming</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link"
+                                    >Search Engine Opt</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link"
+                                    >Social Media</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link"
+                                    >Technology</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link"
+                                    >User Experience</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link"
+                                    >Website Analytics</a
+                                >
+                            </li>
+                        </ul>
+                        <h2 class="sidebar__heading">Popular Product</h2>
+                        <!-- Sidebar Product 1-->
+                        <div class="sidebar-product">
+                            <img
+                                src="./img/sidebar-product-1.jpg"
+                                alt=""
+                                class="sidebar-product__img"
+                            />
+                            <div class="sidebar-product__info">
+                                <a href="#!">
+                                    <p class="sidebar-product__title">
+                                        Analysis & data
+                                    </p>
+                                </a>
+                                <span class="sidebar-product__price"
+                                    >$ 235</span
+                                >
+                            </div>
+                        </div>
+                        <!-- Sidebar Product 2-->
+                        <div class="sidebar-product">
+                            <img
+                                src="./img/sidebar-product-2.jpg"
+                                alt=""
+                                class="sidebar-product__img"
+                            />
+                            <div class="sidebar-product__info">
+                                <a href="#!">
+                                    <p class="sidebar-product__title">
+                                        Software Dev...
+                                    </p>
+                                </a>
+                                <span class="sidebar-product__price">
+                                    $ 35</span
+                                >
+                            </div>
+                        </div>
+                        <!-- Sidebar Product 3-->
+                        <div class="sidebar-product">
+                            <img
+                                src="./img/sidebar-product-3.jpg"
+                                alt=""
+                                class="sidebar-product__img"
+                            />
+                            <div class="sidebar-product__info">
+                                <a href="#!">
+                                    <p class="sidebar-product__title">
+                                        Marketing Plan
+                                    </p>
+                                </a>
+                                <span class="sidebar-product__price">$ 75</span>
+                            </div>
+                        </div>
+                        <!-- Sidebar Product 4-->
+                        <div class="sidebar-product">
+                            <img
+                                src="./img/sidebar-product-4.jpg"
+                                alt=""
+                                class="sidebar-product__img"
+                            />
+                            <div class="sidebar-product__info">
+                                <a href="#!">
+                                    <p class="sidebar-product__title">
+                                        Google Expands
+                                    </p>
+                                </a>
+                                <span class="sidebar-product__price">
+                                    $ 234</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="main__content">
+                        <div class="content-top">
+                            <form action="" class="form-select">
+                                <select name="select" id="select">
+                                    <option
+                                        class="select-option"
+                                        value="select-filter"
+                                    >
+                                        Select Filter
+                                    </option>
+                                    <option
+                                        class="select-option"
+                                        value="by-price"
+                                    >
+                                        By Price
+                                    </option>
+                                    <option
+                                        class="select-option"
+                                        value="by-category"
+                                    >
+                                        By Category
+                                    </option>
+                                    <option
+                                        class="select-option"
+                                        value="by-date"
+                                    >
+                                        By Date
+                                    </option>
+                                </select>
+                            </form>
+                            <p class="content-top-right">
+                                Showing 1-9 of 25 Result
+                            </p>
+                        </div>
+                        <div class="product">
+                            <div class="product__list">
+                                <!-- Product Item 1 -->
+                                <div class="product__item">
+                                    <img
+                                        src="./img/product-img-1.jpg"
+                                        alt=""
+                                        class="product__img"
+                                    />
+                                    <div class="product__info">
+                                        <a href="#!">
+                                            <h2 class="product__title">
+                                                Ten steps to making
+                                            </h2>
+                                        </a>
+                                        <span class="product__price">$ 89</span>
+                                    </div>
+                                    <button class="product__btn">
+                                        Add To Cart
+                                    </button>
+                                </div>
+
+                                <!-- Product Item 2 -->
+                                <div class="product__item">
+                                    <img
+                                        src="./img/product-img-2.jpg"
+                                        alt=""
+                                        class="product__img"
+                                    />
+                                    <div class="product__info">
+                                        <a href="#!">
+                                            <h2 class="product__title">
+                                                Long-Tail SEO Strategy
+                                            </h2>
+                                        </a>
+                                        <span class="product__price">$ 19</span>
+                                    </div>
+                                    <button class="product__btn">
+                                        Add To Cart
+                                    </button>
+                                </div>
+
+                                <!-- Product Item 3 -->
+                                <div class="product__item">
+                                    <img
+                                        src="./img/product-img-3.jpg"
+                                        alt=""
+                                        class="product__img"
+                                    />
+                                    <div class="product__info">
+                                        <a href="#!">
+                                            <h2 class="product__title">
+                                                Create optimized content
+                                            </h2>
+                                        </a>
+                                        <span class="product__price">$ 79</span>
+                                    </div>
+                                    <button class="product__btn">
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <!-- Product Item 4 -->
+                                <div class="product__item">
+                                    <img
+                                        src="./img/product-img-4.jpg"
+                                        alt=""
+                                        class="product__img"
+                                    />
+                                    <div class="product__info">
+                                        <a href="#!">
+                                            <h2 class="product__title">
+                                                Boost Your Organic
+                                            </h2>
+                                        </a>
+                                        <span class="product__price">$ 9</span>
+                                    </div>
+                                    <button class="product__btn">
+                                        Add To Cart
+                                    </button>
+                                </div>
+
+                                <!-- Product Item 5 -->
+                                <div class="product__item">
+                                    <img
+                                        src="./img/product-img-5.jpg"
+                                        alt=""
+                                        class="product__img"
+                                    />
+                                    <div class="product__info">
+                                        <a href="#!">
+                                            <h2 class="product__title">
+                                                Search Rankings
+                                            </h2>
+                                        </a>
+                                        <span class="product__price">$ 47</span>
+                                    </div>
+                                    <button class="product__btn">
+                                        Add To Cart
+                                    </button>
+                                </div>
+
+                                <!-- Product Item 6 -->
+                                <div class="product__item">
+                                    <img
+                                        src="./img/product-img-6.jpg"
+                                        alt=""
+                                        class="product__img"
+                                    />
+                                    <div class="product__info">
+                                        <a href="#!">
+                                            <h2 class="product__title">
+                                                School PPC
+                                            </h2>
+                                        </a>
+                                        <span class="product__price">$ 36</span>
+                                    </div>
+                                    <button class="product__btn">
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <!-- Product Item 7 -->
+                                <div class="product__item">
+                                    <img
+                                        src="./img/product-img-7.jpg"
+                                        alt=""
+                                        class="product__img"
+                                    />
+                                    <div class="product__info">
+                                        <a href="#!">
+                                            <h2 class="product__title">
+                                                Guide to SEO
+                                            </h2>
+                                        </a>
+                                        <span class="product__price">
+                                            $ 19</span
+                                        >
+                                    </div>
+                                    <button class="product__btn">
+                                        Add To Cart
+                                    </button>
+                                </div>
+
+                                <!-- Product Item 8 -->
+                                <div class="product__item">
+                                    <img
+                                        src="./img/product-img-8.jpg"
+                                        alt=""
+                                        class="product__img"
+                                    />
+                                    <div class="product__info">
+                                        <a href="#!">
+                                            <h2 class="product__title">
+                                                Influencer Marketing
+                                            </h2>
+                                        </a>
+                                        <span class="product__price">$ 90</span>
+                                    </div>
+                                    <button class="product__btn">
+                                        Add To Cart
+                                    </button>
+                                </div>
+
+                                <!-- Product Item 9 -->
+                                <div class="product__item">
+                                    <img
+                                        src="./img/product-img-9.jpg"
+                                        alt=""
+                                        class="product__img"
+                                    />
+                                    <div class="product__info">
+                                        <a href="#!">
+                                            <h2 class="product__title">
+                                                PPC Agency
+                                            </h2>
+                                        </a>
+                                        <span class="product__price">
+                                            $ 78</span
+                                        >
+                                    </div>
+                                    <button class="product__btn">
+                                        Add To Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="turn-page__list">
+                            <li class="turn-page__item">
+                                <a href="#!" class="turn-page__link">1</a>
+                            </li>
+                            <li class="turn-page__item">
+                                <a href="#!" class="turn-page__link">2</a>
+                            </li>
+                            <li class="turn-page__item">
+                                <a href="#!" class="turn-page__link">3</a>
+                            </li>
+                            <li class="turn-page__item">
+                                <a href="#!" class="turn-page__link"
+                                    ><i class="fa-solid fa-arrow-right"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!-- footer-col 1 -->
+                    <div class="footer__col">
+                        <a href="#!"
+                            ><img src="./img/logo.png" alt="" class="logo"
+                        /></a>
+                        <p class="footer__desc">
+                            Scholars provides universal access to the world’s
+                            best education, partnering with top universities and
+                            organizations to offer courses online.
+                        </p>
+                        <p class="footer__copyright">
+                            © 2017 Scholrs Inc. All rights reserved.
+                        </p>
+                        <div class="footer__download">
+                            <a href="#!"
+                                ><img
+                                    src="./img/img-footer-1.png"
+                                    alt=""
+                                    class="footer__download--img"
+                            /></a>
+                            <a href="#!"
+                                ><img
+                                    src="./img/img-footer-2.png"
+                                    alt=""
+                                    class="footer__download--img"
+                            /></a>
+                        </div>
+                    </div>
+
+                    <!-- footer-col 2-->
+                    <div class="footer__col">
+                        <h2 class="footer__title">Scholars</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Leadership</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Careers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">FAQ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- footer-col 3 -->
+                    <div class="footer__col">
+                        <h2 class="footer__title">Product</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Education Light</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Education Starter</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Education Premium</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Business</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Business Plus</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- footer-col 4 -->
+                    <div class="footer__col">
+                        <h2 class="footer__title">Support</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Support</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Toll Free Number</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Open Ticket</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >System Requirements</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- footer-col 5 -->
+                    <div class="footer__col">
+                        <h2 class="footer__title">Subscribe Us</h2>
+                        <p class="footer__subtitle">
+                            Subscribe us to get all the latest news from us
+                        </p>
+                        <form action="" class="footer__form">
+                            <input
+                                type="email"
+                                class="footer__form-input"
+                                placeholder="Your Email..."
+                            />
+                            <button class="footer__form-btn">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="btn-outside"></div>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Custom Checkbox</title>
+
+        <!-- Link Css -->
+        <link rel="stylesheet" href="./css/reset.css" />
+    </head>
+    <style>
+        .container {
+            width: 800px;
+            margin: 60px auto;
+            display: flex;
+            gap: 60px;
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 30px;
+        }
+
+        .wrapper-col {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .checkbox,
+        .radio {
+            position: relative;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+            border: 2px solid #5e5e5e;
+        }
+
+        .checkbox:has(input[type="checkbox"]:checked) {
+            background: #179788;
+        }
+
+        .checkbox::after {
+            position: absolute;
+            content: "";
+            width: 26px;
+            height: 16px;
+            border-left: 5px solid #fff;
+            border-bottom: 5px solid #fff;
+            top: 8px;
+            right: 8px;
+            rotate: -45deg;
+            border-radius: 3p;
+        }
+
+        .radio {
+            border-radius: 50%;
+        }
+
+        .radio:has(input[type="radio"]:checked) {
+            border-color: #179788;
+        }
+
+        .radio:has(input[type="radio"]:checked)::after {
+            content: "";
+        }
+
+        .radio::after {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #179788;
+            top: 10px;
+            left: 10px;
+        }
+
+        .switch {
+            position: relative;
+            display: block;
+            width: 100px;
+            height: 50px;
+            background: #5e5e5e;
+            border-radius: 99px;
+            transition: background ease 0.5s;
+        }
+
+        .switch::before {
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: -1px 3px 51px -5px rgba(0, 0, 0, 0.75);
+            top: -6px;
+            left: -1;
+            transition: translate ease 0.3s;
+        }
+
+        .switch:has(input[type="checkbox"]:checked) {
+            background: #25eed6;
+        }
+
+        .switch:has(input[type="checkbox"]:checked)::before {
+            background: #179788;
+            translate: 70%;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <form action="" class="form-custom">
+                <div class="wrapper">
+                    <div class="wrapper-col">
+                        <label class="checkbox">
+                            <input type="checkbox" hidden checked />
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" hidden />
+                        </label>
+                    </div>
+                    <div class="wrapper-col">
+                        <label class="radio">
+                            <input type="radio" name="radio" hidden checked />
+                        </label>
+
+                        <label class="radio">
+                            <input type="radio" name="radio" hidden />
+                        </label>
+                    </div>
+                    <div class="wrapper-col">
+                        <label class="switch">
+                            <input type="checkbox" hidden checked />
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox" hidden />
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
